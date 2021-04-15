@@ -1,0 +1,7 @@
+{{page-title "Schedule"}}
+
+<button type="button" {{on 'click' (fn this.setFilters (if this.showFilters false true))}}>
+  {{if this.showFilters 'Hide' 'Show'}} Filters
+</button>
+
+{{outlet}}
