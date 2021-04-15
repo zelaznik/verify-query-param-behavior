@@ -1,2 +1,11 @@
 {{page-title "Facesheet"}}
 {{outlet}}
+
+<ul>
+  <li>
+    <LinkTo @route='schedule' @query={{hash showFilters=false}}>Filters Hidden</LinkTo>
+  </li>
+  <li>
+    <LinkTo @route='schedule' @query={{hash showFilters=true}}>Filters Shown</LinkTo>
+  </li>
+</ul>
